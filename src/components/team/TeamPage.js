@@ -2,11 +2,11 @@
 
 import React from 'react';
 import TeamMember from './TeamMember';
-import members from '../../../data/equipe.json';
+import team from '../../../data/team.json';
 import './teamPage.css';
 
 const renderMembers = () =>
-    members.map(member => (
+    team.map(member => (
         <li>
             <TeamMember {...member} />
         </li>
